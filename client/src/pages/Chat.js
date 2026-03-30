@@ -14,10 +14,7 @@ export default function Chat() {
 
   // Fetch old messages
   useEffect(() => {
-    fetchMessages();
-  }, []);
-
-  const fetchMessages = async () => {
+    const fetchMessages = async () => {
     try {
       const res = await API.get(`/chat/${userId}`);
       setMessages(res.data);
@@ -26,6 +23,10 @@ export default function Chat() {
     }
   };
 
+    fetchMessages();
+  }, [userID]);
+
+  
   // Receive message
   useEffect(() => {
     socket.on("receive_message", (data) => {

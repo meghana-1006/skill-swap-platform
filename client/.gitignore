@@ -1,23 +1,69 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ===============================
+# Node modules
+# ===============================
+node_modules/
+client/node_modules/
+server/node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# ===============================
+# Environment variables (VERY IMPORTANT)
+# ===============================
+.env
+.env.*
+client/.env
+server/.env
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# ===============================
+# Logs
+# ===============================
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# ===============================
+# OS files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Build folders
+# ===============================
+build/
+dist/
+client/build/
+
+# ===============================
+# Coverage
+# ===============================
+coverage/
+
+# ===============================
+# Cache
+# ===============================
+.cache/
+.parcel-cache/
+
+# ===============================
+# VS Code settings
+# ===============================
+.vscode/
+
+# ===============================
+# Misc
+# ===============================
+*.local
+*.tmp
+
+# ===============================
+# MongoDB local data (if any)
+# ===============================
+data/
+*.mongodb
+
+# ===============================
+# Optional: Ignore uploads (if you store images locally)
+# ===============================
+uploads/
