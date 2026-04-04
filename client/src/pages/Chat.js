@@ -24,7 +24,7 @@ export default function Chat() {
   };
 
     fetchMessages();
-  }, [userID]);
+  }, [userId]);
 
   
   // Receive message
