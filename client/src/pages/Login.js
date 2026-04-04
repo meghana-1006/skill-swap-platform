@@ -17,8 +17,9 @@ export default function Login() {
 
       nav("/dashboard");
     } catch (err) {
-      alert("Login failed ❌");
-    }
+  console.log(err.response?.data || err.message);
+  alert(err.response?.data?.msg || "Login failed ❌");
+}
   };
 
   return (
