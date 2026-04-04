@@ -20,7 +20,9 @@ const io = new Server(server, {
 });
 
 // middleware
-app.use(cors({origin:"*",}));
+app.use(cors({origin:"https://skill-swap-platform-rho.vercel.app",
+  credentials:true
+}));
 app.use(express.json());
 
 // routes
